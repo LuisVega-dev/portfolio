@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera Web</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="mostrar-menu">
+          <i class="fa-solid fa-bars" id="open-menu"></i>
+          <i class="fa-solid fa-x" id="close-menu"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="./formulario/formulario.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section id="inicio" class="hero">
+          <div class="hero-content">
+            <h1>Luis Vega</h1>
+            <h2>Desarrollador Web</h2>
+            <p>Creando soluciones digitales innovadoras</p>
+            <a href="#contacto" class="btn-contacto">Contáctame</a>
+          </div>
+          <div class="hero-image">
+            <img src="hero-img.webp" alt="Luis Vega" width="300px" />
+          </div>
+        </section>
+
+        <section id="sobre-mi" class="sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy Luis Vega, un apasionado desarrollador web nacido en Valledupar, Colombia. 
+            Desde niño, me ha fascinado el mundo de la programación, siempre curioso por 
+            entender cómo se crean los juegos y las páginas web.
+          </p>
+          <p>
+            Cuando no estoy programando, me gusta descansar y recargar energías. Sin embargo, 
+            gran parte de mi tiempo lo dedico a fortalecer mis conocimientos en programación, 
+            siempre en busca de nuevos desafíos y oportunidades de aprendizaje.
+          </p>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+          <h2>Mis Proyectos</h2>
+          <div class="proyecto-grid">
+            <div class="proyecto">
+              <img src="proyecto1.jpg" alt="Proyecto 1">
+              <h3>Nombre del Proyecto 1</h3>
+              <p>Breve descripción del proyecto</p>
+              <a href="#" class="btn-ver-proyecto">Ver proyecto</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+          <h2>Mis Habilidades</h2>
+          <ul class="lista-habilidades">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
+
+        <section id="contacto" class="contacto">
+          <h2>Contacto</h2>
+          <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </section>
+      </main>
+
+      <div class="container-btn">
+        <button id="btn-generar">Generar Frase Aleatoria</button>
+      </div>
+      <footer id="footer">
+        <p id="frase"></p>
+      </footer>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
